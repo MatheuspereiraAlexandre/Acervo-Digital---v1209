@@ -7,7 +7,7 @@ let vue = new Vue({
     },
     methods: {
         async fetchUser() {
-            const urlUser = "http://localhost:3000/user";
+            const urlUser = "https://api-biblioteca-v101.onrender.com/user";
             try {
                 const response = await fetch(urlUser);
                 if (!response.ok) {
@@ -22,7 +22,7 @@ let vue = new Vue({
         },
 
         async fetchBooks() {
-            const urlBook = "http://localhost:3000/books";
+            const urlBook = "https://api-biblioteca-v101.onrender.com/books";
             try{
                 const response = await fetch(urlBook);
                 if(!response.ok){
@@ -38,7 +38,7 @@ let vue = new Vue({
         },
 
         async fetchArticles() {
-            const urlArticles = "http://localhost:3000/articles";
+            const urlArticles = "https://api-biblioteca-v101.onrender.com/articles";
             try{
                 const response = await fetch(urlArticles);
                 if(!response.ok){
