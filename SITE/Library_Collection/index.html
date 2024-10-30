@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="shortcut icon" href="resources/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/main-page.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Acervo Digital: Ser acervo e ser digital; eis a junção!</title>
+</head>
+
+<body>
+    <header class="container" id="header" style="flex-direction: column;">
+        <div class="header-content container" id="header-content" style="justify-content: space-between;">
+            <div class="header-item">
+                <img src="..\assets\images\logos\cps\logo_cps_versao_br.png" alt="Logo CPS" class="logo-cps">
+            </div>
+            <div class="header-item">
+                <h1><span>ETEC DE</span> PERUÍBE</h1>
+            </div>
+            <div class="header-item">
+                <img src="..\assets\images\logos\etec\logo_etec_cor.png" alt="Logo Etec" class="logo-etec">
+            </div>
+        </div>
+        <div class="header-dropdown container" id="header-dropdown"
+            style="flex-direction: column; align-items: flex-end;">
+            <div class="dropdown" id="dropdown">
+                <button class="dropdown-btn" id="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"><!--Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
+                            /!-->
+                    </svg>
+                </button>
+                <div class="dropdown-content container" id="dropdown-content" style="flex-direction: column;">
+                    <div class="dropdown-item">
+                        <a class="dropdown-link" href="https://nsa.cps.sp.gov.br/">nsa oficial</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a class="dropdown-link" href="..\Library_Collection\index.html">acervo digital</a>
+                    </div>
+                    <div class="dropdown-item">
+
+                        <a class="dropdown-link" href="..\Library_Login\login.html">login</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a class="dropdown-link" href="..\Library_Collection\external-libraries.html">bibliotecas
+                            digitais externas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="container">
+        <div class="main-content">
+            <nav class="container">
+                <div class="profile"></div>
+                <form action="" id="search-bar" class="container">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.!-->
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                    </button>
+                    <input type="text" name="search-bar" id="">
+                    <button type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.!-->
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg>
+                    </button>
+                </form>
+            </nav>
+
+            <span class="line-division"></span>
+
+            <div class="container">
+                <section class="articles-section container">
+                    <h2>Artigos</h2>
+
+                    <article>
+                        <div class="article-header" id="artigo-falso">
+                            <h3>Artigo: Isto não é um artigo de verdade!</h3>
+                        </div>
+                        <div class="article-body">
+                            <h5>Autor: João Santos</h5>
+                            <h6>Data publicada: 14/13/2024 12:22</h6>
+                            <p>Este artigo trata-se de, nada mais e nada menos do que, um texto base para trabalharmos
+                                na estilização dos artigos.</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="article-header" id="artigo-falso">
+                            <h3>Artigo: Isto não é um artigo de verdade!</h3>
+                        </div>
+                        <div class="article-body">
+                            <h5>Autor: João Santos</h5>
+                            <h6>Data publicada: 14/13/2024 12:22</h6>
+                            <p>Este artigo trata-se de, nada mais e nada menos do que, um texto base para trabalharmos
+                                na estilização dos artigos.</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="books-section container" id="app">
+                    <ul class="book">
+                        <li v-for="book in books" :key="book.id_livro" class="card-book">
+                            <a :href="book.pdf_livro" target="_blank">
+                                <div class="img" :style="{ backgroundImage: 'url(' + book.capa_livro + ')' }"></div>
+                                <h3>{{ book.titulo }}</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                
+
+
+
+            </div>
+        </div>
+    </main>
+
+    <button id="scroll-up-btn" class="" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.!-->
+            <path
+                d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
+        </svg></button>
+
+    <footer>
+        <p>ETEC de Peruíbe &#8211; CENTRO PAULA SOUZA <a
+                href="https://etecperuibe.cps.sp.gov.br/localizacao-e-contato/">Contato</a></p>
+        <p>&copy; 2024</p>
+    </footer>
+
+
+    <script src="../assets/script.js"></script>
+    <script src="../assets/vue.js"></script>
+</body>
+</html>

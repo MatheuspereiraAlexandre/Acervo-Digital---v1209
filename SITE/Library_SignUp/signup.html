@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="shortcut icon" href="resources/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <title>Acervo Digital - Cadastro</title>
+</head>
+<body>
+    <header class="container" id="header" style="flex-direction: column;">
+        <div class="header-content container" id="header-content" style="justify-content: space-between;">
+            <div class="header-item">
+                <img src="..\assets\images\logos\cps\logo_cps_versao_br.png" alt="Logo CPS" class="logo-cps">
+            </div>
+            <div class="header-item">
+                <h1><span>ETEC DE</span> PERUÍBE</h1>
+            </div>
+            <div class="header-item">
+                <img src="..\assets\images\logos\etec\logo_etec_cor.png" alt="Logo Etec" class="logo-etec">
+            </div>
+        </div>
+        <div class="header-dropdown container" id="header-dropdown" style="flex-direction: column; align-items: flex-end;">
+            <div class="dropdown" id="dropdown">
+                <button class="dropdown-btn" id="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.!--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                </button>
+                <div class="dropdown-content container" id="dropdown-content" style="flex-direction: column;">
+                    <div class="dropdown-item">
+                        <a class="dropdown-link" href="https://nsa.cps.sp.gov.br/">nsa oficial</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a class="dropdown-link" href="..\Library_Collection\index.html">acervo digital</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a class="dropdown-link" href="..\Library_Login\login.html">login</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a class="dropdown-link" href="..\Library_Collection\external-libraries.html">bibliotecas digitais externas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="container">
+        <form action="http://localhost:3000/cadastro" method="post" class="container" style="flex-direction: column;"> 
+            <div class="inputs container" style="flex-direction: column; height: 400px; justify-content: flex-start;">
+                <div class="container" style="margin-bottom: 45px; letter-spacing: 10px;">
+                    <h2>cadastro</h2>
+                </div>
+
+                <div class="container">
+                    <label class="container" for="nome">nome</label>
+                    <input type="text" name="nome" id="" placeholder="nome..." maxlength="30" required>
+                </div>
+                
+                <div class="container">
+                    <label class="container" for="email">email</label>
+                    <input type="email" name="email" id="" placeholder="email@email.com..." maxlength="150" required>
+                </div>
+
+                <div class="container">
+                    <label class="container" for="senha">senha</label>
+                    <input type="password" name="senha" id="" placeholder="senha..." maxlength="20" required>
+                    <i class="far fa-eye" id="togglePassword" style="cursor: pointer;"></i>
+                </div>
+
+                <div class="signup-txt">
+                    <p>Já possui um registro? <a href="..\Library_Login\login.html">Adentre-se!</a></p>
+                </div>
+            </div>
+
+            <div class="buttons container">
+                <button><a href="..\Library_Collection\main-page.html">anterior</a></button>
+                <button type="submit">próximo</button>
+            </div>
+        </form>
+    </main>
+
+    <button id="scroll-up-btn" class="" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.!--><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg></button>
+
+    <footer>
+        <p>ETEC de Peruíbe &#8211; CENTRO PAULA SOUZA <a href="https://etecperuibe.cps.sp.gov.br/localizacao-e-contato/">Contato</a></p>
+        <p>&copy; 2024</p>
+    </footer>
+
+
+
+    <script src="../assets/script.js"></script>
+</body>
+</html>

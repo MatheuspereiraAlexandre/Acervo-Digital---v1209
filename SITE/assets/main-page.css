@@ -1,0 +1,265 @@
+/* ====================================================================== */
+/* ====================================================================== */
+/* ====================================================================== */
+
+/*  -- HTML --  */
+body {
+    background-color: var(--color-bg-red);
+    background-image: none;
+}
+
+/* ====================================================================== */
+
+/*  -- Main  */
+main.container {
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+
+    padding: 0px 0px 60px 0px !important; 
+}
+
+div.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+}
+
+div.main-content > nav.container {
+    padding: 20px 40px;
+    width: 100%;
+}
+
+div.profile {
+    background-color: var(--color-bg-dark-blue);
+    border-radius: 50px;
+
+    height: 70px;
+    width: 70px;
+}
+
+span.line-division {
+    background-color: var(--color-bg-black);
+
+    height: 4px;
+    width: 95%;
+}
+
+div.main-content > div.container {
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+
+    padding: 20px 0px;
+    width: 100%;
+}
+
+/* ====================================================================== */
+
+/*  -- Seach Bar -- */
+form#search-bar {
+    height: 50px;
+}
+
+form#search-bar input {
+    background-color: var(--color-bg-light-gray);
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+
+    width: 70%;
+    height: 100%;
+}
+
+form#search-bar button {
+    cursor: pointer;
+
+    background-color: var(--color-bg-light-gray);
+    border: none;
+    border-radius: 0px var(--search-bar-btn-border-radius) var(--search-bar-btn-border-radius) 0px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+    width: 8%;
+    height: 100%;
+}
+
+form#search-bar button:first-child {
+    border-radius: var(--search-bar-btn-border-radius) 0px 0px var(--search-bar-btn-border-radius)
+}
+
+form#search-bar button:first-child svg {
+    height: calc(var(--search-bar-icons-size) - 20%);
+}
+
+form#search-bar button:not(:first-child) svg {
+    height: var(--search-bar-icons-size)
+}
+
+/* ====================================================================== */
+
+/*  -- Articles and Books Sections --   */
+
+/* > Articles Sections > */
+section.articles-section.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0px 18px;
+    width: 35%;
+}
+
+section.articles-section h2,
+section.books-section h2 {
+    color: var(--color-txt-white);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+section.articles-section h2::after,
+section.books-section h2::after {
+    content: "\00BB";
+}
+
+section.articles-section h2::before,
+section.books-section h2::before {
+    content: "\00BB";
+}
+
+section.articles-section > article {
+    background-color: var(--color-bg-medium-gray);
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    margin-top: 20px;
+    width: 100%;
+    min-height: 600px;
+}
+
+div.article-header {
+    background-color: inherit;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 260px;
+}
+
+div.article-header#artigo-falso {
+    background-image: url(https://www.geledes.org.br/wp-content/uploads/2020/02/Machado_de_Assis_real_negro-1.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    box-shadow: inset 0px 0px 15px black;
+}
+div.article-header h3 {
+    background-color: inherit;
+
+    box-shadow: 0px -5px 12px var(--color-bg-gray);
+
+    padding: 10px 4px;
+    min-height: 22%;
+    width: 100%;
+}
+
+div.article-header h3::before,
+div.article-header h3::after {
+    content: '"';
+}
+
+div.article-body {
+    padding: 20px 8px;
+    width: 100%;
+}
+
+div.article-body h5 {
+    text-transform: capitalize;
+}
+
+div.article-body h6 {
+    margin-bottom: 15px;
+}
+
+div.article-body p {
+    text-align: justify;
+    text-indent: 30px;
+    word-wrap: break-word;
+    width: 90%;
+}
+
+/* > Books Sections > */
+section.books-section {
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    padding: 0px 18px;
+    width: 65%;
+}
+
+section.books-section ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+section.books-section li {
+    list-style: none;
+
+    margin: 20px 0px;
+}
+
+li.card-book {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-bg-dark-red-trans);
+
+    width: 220px;
+    height: 320px;
+}
+
+li.card-book > a {
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+
+    width: 100%;
+    height: 100%;
+}
+
+li.card-book .img {    
+    background-image: url(https://www.geledes.org.br/wp-content/uploads/2020/02/Machado_de_Assis_real_negro-1.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: var(--color-txt-white);
+
+    box-shadow: inset 0px 0px 15px black;
+
+    width: 100%;
+    height: 80%;
+}
+
+li.card-book h3 {
+    color: var(--color-txt-light-wheat);
+
+    text-align: left;
+
+    padding: 10px 8px;
+    width: 100%;
+    height: 20%;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="resources/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/book-register.css">
+
+    <title>Acervo Digital - Registro de Livro</title>
+</head>
+<body>
+    <header class="container" id="header" style="flex-direction: column;">
+        <div class="header-content container" id="header-content" style="justify-content: space-between;">
+            <div class="header-item">
+                <img src="..\assets\images\logos\cps\logo_cps_versao_br.png" alt="Logo CPS" class="logo-cps">
+            </div>
+            <div class="header-item">
+                <h1><span>ETEC DE</span> PERUÍBE</h1>
+            </div>
+            <div class="header-item">
+                <img src="..\assets\images\logos\etec\logo_etec_cor.png" alt="Logo Etec" class="logo-etec">
+            </div>
+        </div>
+        <div class="header-dropdown container" id="header-dropdown" style="flex-direction: column; align-items: flex-end;">
+            <div class="dropdown" id="dropdown">
+                <button class="dropdown-btn" id="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.!--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                </button>
+                <div class="dropdown-content container" id="dropdown-content" style="flex-direction: column;">
+                    <div class="dropdown-item">
+                        <a class="dropdown-link" href="https://nsa.cps.sp.gov.br/">nsa oficial</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a class="dropdown-link" href="..\Library_Collection\index.html">acervo digital</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a class="dropdown-link" href="..\Library_SignUp\signup.html">Cadastro</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a class="dropdown-link" href="..\Library_Collection\external-libraries.html">bibliotecas digitais externas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="container">
+        <form action="http://localhost:3000/registrar-livro" method="post" class="container" id="form" style="flex-direction: column;"> 
+            <div class="inputs container" style="flex-direction: column;">
+                <div class="container" style="letter-spacing: 10px;">
+                    <h2>cadastro das obras</h2>
+                </div>
+                
+                <div class="subtitle">
+                    <h3>Detalhes Técnicos</h3>
+                </div>
+                <div class="container">
+                    <label class="container" for="img">Link Capa</label>
+                    <input type="text" name="img" id="" placeholder="..." maxlength="200" required>
+                </div>
+                <div class="container">
+                    <label class="container" for="pdf">Link PDF</label>
+                    <input type="text" name="pdf" id="" placeholder="..." maxlength="200" required>
+                </div>
+                <div class="container">
+                    <label class="container" for="isbn">ISBN</label>
+                    <input type="text" name="isbn" id="" placeholder="..." maxlength="150" required>
+                </div>
+
+                <div class="subtitle">
+                    <h3>Informações Gerais</h3>
+                </div>
+                <div class="container" id="titulo">
+                    <label class="container" for="titulo">Título</label>
+                    <input type="text" name="titulo" id="" placeholder="..." maxlength="100" required>
+                </div>
+                <div class="container" id="descricao">
+                    <label class="container" for="descricao">Descrição</label>
+                    <textarea name="descricao" id="descricao" placeholder="..." maxlength="800" required></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="container" id="autor">
+                            <label class="container" for="autor">Autor</label>
+                            <input type="text" name="autor" id="" placeholder="..." maxlength="100" required>
+                        </div>
+                        <div class="container" id="editora">
+                            <label class="container" for="editora">Editora</label>
+                            <input type="text" name="editora" id="" placeholder="..." maxlength="100" required>
+                        </div> 
+                    </div>
+                    <div class="col">
+                        <div class="container" id="genero">
+                            <label class="container" for="genero">Gênero</label>
+                            <select name="genero" id="">
+                                <option value="Romance">Romance</option>
+                                <option value="Ficção">Ficção</option>
+                                <option value="Suspense">Suspense</option>
+                            </select>
+                        </div>
+                        <div class="container" id="publicacao">
+                            <label class="container" for="publicacao">Publicação</label>
+                            <input type="date" name="publicacao" id="" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons container">
+                <button><a href="..\Library_Collection\main-page.html">anterior</a></button>
+                <button type="submit">próximo</button>
+            </div>
+        </form>
+    </main>
+
+    <button id="scroll-up-btn" class="" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.!--><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg></button>
+
+    <footer>
+        <p>ETEC de Peruíbe &#8211; CENTRO PAULA SOUZA <a href="https://etecperuibe.cps.sp.gov.br/localizacao-e-contato/">Contato</a></p>
+        <p>&copy; 2024</p>
+    </footer>
+
+
+
+    <script src="../assets/script.js"></script>
+</body>
+</html>
+

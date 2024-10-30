@@ -1,0 +1,25 @@
+====================================================================
+====================================================================
+
+	CHANGELOG	--	vers. 11 09	-- 	data: cinco de setembro de 2024
+
+====================================================================
+
+- Documento JAVASCRIPT compartilhado para todas as páginas
+
+- Estilização da página principal está pronta.
+
+** OBS.: Os botões "download PDG" e "acessibilidade" tem seus funcionamentos INDEFINIDOS, não foi possível trabalhar nesses botões justamente pela falta de explicação de sua utilidade;
+
+====================================================================
+
+Alterações realizadas por: LC
+
+====================================================================
+
+
+
+
+
+====================================================================
+====================================================================

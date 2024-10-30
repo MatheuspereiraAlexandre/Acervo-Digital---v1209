@@ -1,0 +1,91 @@
+/* ====================================================================== */
+/* ====================================================================== */
+/* ====================================================================== */
+
+/*  -- HTML --  */
+body{
+    background-image: none;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-image: url(images/only_books.png);
+    opacity: 0.4;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* ====================================================================== */
+
+/*  -- Main */
+main {
+    padding: 60px 0px;
+}
+
+form {
+    width: 90%;
+}
+
+div.subtitle {
+    margin: 25px 0px 45px 0px;
+    letter-spacing: 6px;
+}
+
+div.container#titulo{
+    width: 60%;
+}
+
+div.container#descricao{
+    width: 75%;
+}
+
+div.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 45%;
+}
+
+form > div.inputs textarea {
+    border: 2px solid var(--color-txt-wheat);
+
+    resize: none;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    margin-left: 10px;
+    padding: 10px 15px;
+}
+
+form > div.inputs textarea:focus {
+    overflow: auto;
+    height: 300px;
+}
+
+form > div.inputs input[type="date"] {
+    margin-right: 30%;
+    width: 40%;
+}
+
+form div.col > div.container {
+    border-radius: 26px;
+    width: 100%;
+}
+
+div.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 90%;
+}
